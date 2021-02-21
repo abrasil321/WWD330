@@ -4,7 +4,7 @@ function generator1(){
     const links = [
         {
           label: "Week1",
-          url: "https://github.com/abrasil321/WWD330"
+          url: "https://github.com/abrasil321/WWD330/tree/main/js/week01"
         },
         {
           label: "Week2",
