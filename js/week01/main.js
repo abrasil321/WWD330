@@ -16,7 +16,7 @@ function generator1(){
         },
         {
           label: "Week4",
-          url: "https://github.com/abrasil321/WWD330"
+          url: "https://github.com/abrasil321/WWD330/tree/main/js/week4"
         },
         {
           label: "Week5",
