@@ -8,11 +8,11 @@ function generator1(){
         },
         {
           label: "Week2",
-          url: "https://github.com/abrasil321/WWD330/blob/main/js/week2/index.html"
+          url: "https://github.com/abrasil321/WWD330/blob/main/js/week2"
         },
         {
           label: "Week3",
-          url: "https://github.com/abrasil321/WWD330"
+          url: "https://github.com/abrasil321/WWD330/tree/main/js/week3"
         },
         {
           label: "Week4",
