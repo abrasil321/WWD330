@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#displayTodo, #displayTodo1{
+    width: 97%;
+    height: 70%;
+    border-width: thin;
+    border-style: solid;
+    padding: 1%;
+}
+#displayTodo1, #inputs{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+#newtime, #newtodo{
+    margin-right: 1%;
+}
+#checkbox{
+    width: 2% 15%;
+    margin-right: 2%;
+    background-color: rgb(154, 197, 197);
+    padding: 1.8%;
+}
+#deletebox{
+    display: flex;
+    text-align: end;
+    width: 2% 15%;
+    margin-left: 55%;
+}
