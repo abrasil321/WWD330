@@ -9,9 +9,9 @@ body{
     height: 70%;
     border-width: thin;
     border-style: solid;
-    padding: 1%;
+    padding-left: 0.5%;
 }
-#displayTodo1, #inputs{
+div{
     display: flex;
     flex-direction: row;
     font-size: large;
@@ -19,15 +19,22 @@ body{
 #newtime, #newtodo{
     margin-right: 1%;
 }
-#checkbox{
-    width: 2% 15%;
-    margin-right: 2%;
-    background-color: rgb(154, 197, 197);
-    padding: 1.8%;
+#check{
+    margin: 0.5%;
+    background-color: rgb(0, 168, 0);
+    padding: 1%;
+    width: 30px;
 }
-#deletebox{
+#delete{
+    padding: 1%;
+}
+div{
     display: flex;
-    text-align: end;
-    width: 2% 15%;
-    margin-left: 55%;
+    flex-direction: row;
+    font-size: larger;
+    justify-content: space-between;
+}
+pre{
+    
+    margin: 0%;
 }
