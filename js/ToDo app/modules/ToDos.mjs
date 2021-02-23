@@ -1,26 +1,38 @@
 import {populateTodo} from './ls.js'
 
-function dispTodo(){
-    let displaying = ""
-    let id = ""
-    let content = ""
+const mydiv = document.getElementsByTagName("div");
+const create = document.createElement("p");
+mydiv[0].innerHTML = ` <div id="displayTodo"> 
+                            <div id="check"></div> 
+                            <pre>This is my task</pre> 
+                            <div id="delete"> <i class="fa fa-trash"></i> </div>
+                        </div>`;
 
-    populateTodo().forEach(function(o){
-        id = o.id
-        content = o.content
-        for(let i = 0; i < 4; i++){
-            displaying += "<div id='displayTodo1'> "
-            displaying += "<div id='checkbox'> </div>"
-            displaying += content[i] + " "
-            displaying += "at " + id[i] 
-            displaying += "<div id='deletebox'> <i class='material-icons'>delete</i> </div>"
-            displaying += "</div> <br> "
-        }
-        document.getElementById("displayTodo").innerHTML = displaying;
-    })   
-  
-}
+const task = document.getElementsByTagName("pre");
+const check = document.getElementById("check");
+let count = 0;
+check.addEventListener('click', () => {
+    if(count == 0){
+        check.style.backgroundColor = "black";
+        count = 1;
+        task[0].style.textDecoration = "line-through";
+    }
+    else if(count == 1){
+        check.style.backgroundColor = "rgb(0, 168, 0)";
+        count = 0;
+        task[0].style.textDecoration = "none";
+    }
+    
+})
 
-dispTodo()
+const del = document.getElementById("delete");
+del.addEventListener("click", () =>{
+    if(confirm("Are you sure that you want to delete this task?")){
+        mydiv[0].remove();
+    }
+    
+})
+
+
 
 
