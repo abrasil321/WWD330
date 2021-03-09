@@ -1,4 +1,5 @@
 import comments from "./allcomments.js"
+import * as comment from './ls.js'
 
 const hikeList = [
     {
@@ -53,7 +54,6 @@ export default class hikeClass {
 
   generateHTML(){
     for(let i = 0; i < this.hike().length; i++){
-
       let hikes = this.hike();
       let hike = hikes[i];
       this.myDiv.innerHTML +=  `<div id="title"> ${hike.name} </div>
@@ -65,15 +65,16 @@ export default class hikeClass {
                     <ul>
                   </div> `;
     }
-    this.myDiv.innerHTML += `<br><div id="comment">
-                              <textarea cols="50" rows="6" placeholder="Enter comment here..."></textarea>
-                              <button type="button">Submit</button>
-                             </div>`;
+    this.myDiv.innerHTML += `<hr><br>
+                            <div id="comment">
+                                <textarea id="commentContent" cols="50" rows="6" placeholder="Enter comment here..." required></textarea>
+                              <button type="button" id="setButton" onclick="addComment();">Submit</button>
+                            </div>`;
 
     this.myDiv.innerHTML += this.comments();
     
-
     this.myTable[0].appendChild(this.myDiv);
   }
+
 };
 
