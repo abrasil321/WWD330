@@ -1,0 +1,24 @@
+p{
+    color: red;
+}
+p:hover{
+    /* transform: translateX(45px); */
+    color: blue;
+    font-size: 30px;
+    /* transform:skew(15deg, 4deg); */
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+
+}
+.myCanvas {
+    border: solid 2px black;
+    width: 40%;
+    height: 40%;
+    margin: 5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
