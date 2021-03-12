@@ -1,5 +1,3 @@
-import {populateTodo} from './ls.js'
-
 const mydiv = document.getElementsByTagName("div");
 const create = document.createElement("p");
 mydiv[0].innerHTML = ` <div id="displayTodo"> 
